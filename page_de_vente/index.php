@@ -32,7 +32,7 @@ session_start();
     <section class="titre">
         <h1>Apprenez à créer des tunnels de ventes en SEULEMENT 1h</h1>
         (Video de présentation)<br><br>
-        <a href="../../paiement" class="btn">Rejoindre cette formation maintenant</a>
+        <a href="../paiement" class="btn">Rejoindre cette formation maintenant</a>
     </section>
 
     <section class="detail">
