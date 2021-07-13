@@ -1,0 +1,146 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgba(172, 170, 170, 0.5);
+}
+
+.form {
+    margin: 150px;
+    transition: 1s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-input {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    outline: none;background: none;
+    border-bottom: 2px solid #000;
+    z-index: 2;
+}
+
+label {
+    margin-bottom: -5px;
+    z-index: 3;
+}
+
+label:hover {
+    color: rgb(177, 176, 176);
+}
+
+.submit {
+    float: right;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(177, 176, 176);
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #000;
+}
+
+.submit::before {
+    content: '';
+    position: absolute;
+    top: 42px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: green;
+    border-radius: 10px 10px 0 0;
+    transition: 1s;
+    z-index: -1;
+}
+
+.submit:hover::before {
+    top: 0;
+}
+
+.submit:hover {
+    color: white;
+    cursor: pointer;
+}
+
+input:not(:placeholder-shown),
+input:focus {
+    border-bottom: 2px solid green;
+}
+
+input:not(:placeholder-shown) .form-input label,
+input:focus .form-input label {
+    transform: translateY(10px, -30px);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.fab {
+    text-decoration: none;
+    font-size: 40px;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    filter: drop-shadow(0 0 6px rgb(51, 51, 151));
+}
+
+
+
+.fab:hover:first-child {
+    box-shadow: 0 0 0 10px rgb(51, 51, 151);
+}
+
+.fab:first-child {
+    color: rgb(51, 51, 151);
+}
+
+.fab:nth-child(2):hover {
+    box-shadow: 0 0 0 10px rgb(151, 51, 134);
+}
+
+.fab:nth-child(2) {
+    color: rgb(151, 51, 134);
+}
+
+.fab:nth-child(3):hover {
+    box-shadow: 0 0 0 10px rgb(48, 155, 34);
+}
+
+.fab:nth-child(3) {
+    color: rgb(48, 155, 34);
+}
+
+.fab:nth-child(4):hover {
+    box-shadow: 0 0 0 10px rgb(160, 27, 27);
+}
+
+.fab:nth-child(4) {
+    color: rgb(160, 27, 27);
+}
+
+.icon-facebook {
+    filter: drop-shadow(0 0 10px rgb(51, 51, 151));
+}
+
+.alert-success {
+    display: block;
+    background: rgb(13, 126, 13);
+    box-shadow: 0 10px var(--color);
+    border-radius: 0 0 10px 10px;
+    margin: 0 20px;
+    text-align: center;
+    color: #FFF;
+}

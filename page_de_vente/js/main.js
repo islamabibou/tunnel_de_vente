@@ -1,0 +1,1 @@
+gsap.to(".animation", {duration: 4, y: 150})

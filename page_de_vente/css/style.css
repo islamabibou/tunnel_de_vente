@@ -1,0 +1,241 @@
+:root {
+    --color: #19172e;
+    --h: rgb(90, 214, 137);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    background: rgba(196, 183, 183, 0.3);
+}
+
+.horloge {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horloge::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    background: linear-gradient(#f9d924, #ff2c24);
+    animation: flottant 5s ease-in-out infinite;
+}
+
+.horloge::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    width: 250px;
+    height: 70px;
+    border-radius: 10px;
+    background: linear-gradient(#849df1, #4524ff);
+    animation: flottant 5s ease-in-out infinite;
+    animation-delay: -2.5s;
+}
+@keyframes flottant {
+    0%,100% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.decompte {
+    position: relative;
+    width: auto;
+    height: 150px;
+    background: var(--color);
+    opacity: .7;
+    z-index: 1000;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+}
+
+.decompte_header {
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+.contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h4 {
+    color: seashell;
+    text-align: center;
+}
+
+#jour {
+    font-size: 3em;
+}
+
+#heure {
+    font-size: 3em;
+}
+
+#minute {
+    font-size: 3em;
+}
+
+#seconde {
+    font-size: 3em;
+}
+
+.contenu h4:nth-child(odd) {
+    background: rgba(255, 255, 255, .05);
+    padding: 5px 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+#seconde {
+    color: yellow;
+}
+
+.contenu_js {
+}
+
+.titre {
+    padding: 10px;
+    text-align: center;
+}
+
+.titre h1 {
+    color: var(--h);
+}
+
+.btn {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
+    background: var(--color);
+    border-radius: 10px;
+
+}
+
+.detail {
+    padding: 10px;
+    text-align: justify;
+    background: var(--color);
+    color: #fff;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+.detail h3 {
+    text-align: center;
+    color: var(--h);
+}
+
+.detail span {
+    color: rgb(195, 211, 55);
+}
+
+.detail h2 {
+    text-align: center;
+}
+
+.reussir {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.programme {
+    text-align: justify;
+    box-shadow: 0 0 7px var(--color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.programme a {
+    display:block;
+    text-align: center;
+}
+
+.programme h1 {
+    background: var(--color);
+    padding: 20px;
+    color: var(--h);
+    text-align: center;
+    border-radius: 7px;
+}
+
+.card {
+    margin: 25px;
+    padding: 15px;
+    width: 200px;
+    height: auto;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(255, 255, 255, .3);
+    background: var(--color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.contenus {
+    display: flex;
+    flex-wrap: wrap;
+    transition: .5s;
+    display: block;
+    text-align: center;
+}
+
+.contenus a {
+    text-decoration: none;
+    background: var(--h);
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 25px;
+    color: var(--color);
+    display: block;
+    width: 80%;
+}
+
+.contenus h2{
+    color: var(--h);
+}
+
+.alert-success {
+    display: block;
+    background: rgba(146, 214, 146, 0.7);
+    box-shadow: 0 10px 10px var(--color);
+    border-radius: 0 0 10px 10px;
+    margin: 0 20px;
+    text-align: center;
+    color: #FFF;
+}
