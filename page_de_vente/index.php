@@ -144,7 +144,7 @@ session_start();
                 La méthode BACK END WARRIOR pour être un PRO de la conversion.
             </li>
         </ol>
-        <a href="../../paiement" class="btn">Rejoindre cette formation maintenant</a>
+        <a href="../paiement" class="btn">Rejoindre cette formation maintenant</a>
 
         <ul>
             <li>
@@ -169,7 +169,7 @@ session_start();
                 Non, ce programme est disponible et applicable PARTOUT dans le monde entier.
             </li>
         </ul>
-        <a href="../../paiement" class="btn">Rejoindre cette formation maintenant</a>
+        <a href="../paiement" class="btn">Rejoindre cette formation maintenant</a>
     </section>
 
     <section>
